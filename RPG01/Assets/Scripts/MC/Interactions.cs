@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class Interactions : MonoBehaviour
 {
-    GameObject item;
+    GameObject droppedItem;
     InventoryBehaviour inventoryBehaviour;
+    Item item;
 
     private void Awake() {
         inventoryBehaviour = gameObject.AddComponent<InventoryBehaviour>();
+        item = gameObject.AddComponent<Item>();
     }
 
     void Update() {
-        inventoryBehaviour.DeactivateOnButtonPress(
-           item,
-           KeyCode.F
-            );
+        if (Input.GetKeyDown(KeyCode.F)) {
+            item.AddToInventory();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.tag == "Item") {
-            item = collision.gameObject;
+            droppedItem = collision.gameObject;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
         if(collision.tag == "Item") {
-            item = null;
+            droppedItem = null;
         }
     }
 }

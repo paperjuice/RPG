@@ -1,0 +1,31 @@
+Damage
+AttackSpeed
+Burn Resistance
+Area Of Effect
+Mana
+Crit Damage
+Frost Res
+Health
+Cooldown Reduction
+Disease Dmg
+Mana Regen
+Bonus XP
+Movement Speed
+Armour
+Burn Damage
+Critical Chance
+Disease Resitance
+Frost Damage
+Max Range
+Luck
+Charisma
+Precision
+Dodge
+Health Regen
+Block chance
+Chance to fear
+
+Basic
+Strength
+Agility
+Intelligence
