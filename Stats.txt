@@ -1,17 +1,20 @@
 Damage
 AttackSpeed
-Burn Resistance
+Armour
+
+
+
 Area Of Effect
 Mana
 Crit Damage
-Frost Res
+
 Health
 Cooldown Reduction
 Disease Dmg
 Mana Regen
 Bonus XP
 Movement Speed
-Armour
+
 Burn Damage
 Critical Chance
 Disease Resitance
@@ -24,6 +27,10 @@ Dodge
 Health Regen
 Block chance
 Chance to fear
+
+Burn Resistance
+Frost Res
+
 
 Basic
 Strength

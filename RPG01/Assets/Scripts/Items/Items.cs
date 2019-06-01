@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Items : MonoBehaviour
-{
-    Dictionary<ItemStats, float> stats = new Dictionary<ItemStats, float>();
+public class Items : MonoBehaviour {
+    Item generatedItem = new Item();
 
     [SerializeField]
     private GameObject UI_Icon;
@@ -15,18 +13,35 @@ public class Items : MonoBehaviour
             GameObject.FindGameObjectWithTag("Inventory").GetComponent<InventoryBehaviour>();
     }
 
-    private void Start() {
-        GenerateItemStats();
-        UI_Icon.GetComponent<ItemUI>().GetItemStatsForUI(stats);
+    void Start() {
+        Test();
     }
 
     public void AddToInventory() {
         inventoryBehaviour.AddToSlot(UI_Icon);
+        gameObject.SetActive(false);
     }
 
-    public void GenerateItemStats() {
-        stats.Add(ItemStats.HEALTH, 20);
-        stats.Add(ItemStats.MIN_DAMAGE, 1);
-        stats.Add(ItemStats.MAX_DAMAGE, 3);
+    void Test() {
+        Debug.Log("hahaha");
+    }
+    
+
+   void GenerateItemStats() {
+        Debug.Log("hwy");
+        int random = Random.Range(1, 3);
+
+        switch (random) {
+            case 1:
+                generatedItem.MinDamage = 1;
+                break;
+
+            case 2:
+                generatedItem.Health = 3.0f;
+                break;
+        }
+
+        //Debug.Log("DMG" + generatedItem.MinDamage);
+        //Debug.Log("HEALTH" + generatedItem.Health);
     }
 }
