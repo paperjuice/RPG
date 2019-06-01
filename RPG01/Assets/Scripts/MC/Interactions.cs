@@ -6,12 +6,11 @@ public class Interactions : MonoBehaviour
 {
     GameObject droppedItem;
     InventoryBehaviour inventoryBehaviour;
-    Items items;
 
     private void Awake() {
         inventoryBehaviour = gameObject.AddComponent<InventoryBehaviour>();
-        items = gameObject.AddComponent<Items>();
     }
+
 
     void Update() {
         if (Input.GetKeyDown(KeyCode.F)) {

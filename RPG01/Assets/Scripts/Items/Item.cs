@@ -1,5 +1,6 @@
-﻿public struct Item {
-    public float Health { get; set; }
-    public int MinDamage { get; set;  }
-    public int MaxDamage { get; set;  }
+﻿public class Item {
+    public ItemType Type { get; set; }
+    public float Health { get; set; } = 0;
+    public int MinDamage { get; set; } = 0;
+    public int MaxDamage { get; set; } = 0;
 }

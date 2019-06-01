@@ -9,14 +9,14 @@
 public enum ItemType {
      HEAD,
      CHEST,
-     BELT,
-     PANTS,
-     BOOTS,
-     HANDS,
-     SHOULDERS,
-     RING,
-     NECKLACE,
-     MAIN_HAND,
-     OFF_HAND,
-     TOTAL
+     SHOULDERS
+     //BELT,
+     //PANTS,
+     //BOOTS,
+     //HANDS,
+     //RING,
+     //NECKLACE,
+     //MAIN_HAND,
+     //OFF_HAND,
+     //TOTAL
 }
