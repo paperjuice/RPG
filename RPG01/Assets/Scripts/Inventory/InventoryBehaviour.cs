@@ -14,12 +14,12 @@ public class InventoryBehaviour : MonoBehaviour
         }
     }
 
-    public void AddToSlot(RectTransform itemIcon) {
+    public void AddToSlot(GameObject itemIcon) {
         Debug.Log("boy");
         foreach(GameObject i in slots) {
             if(i.transform.childCount == 0) {
-                itemIcon.SetParent(i.transform);
-                itemIcon.localPosition = Vector2.zero;
+                itemIcon.GetComponent<RectTransform>().SetParent(i.transform);
+                itemIcon.GetComponent<RectTransform>().localPosition = Vector2.zero;
             }
         }
     }
