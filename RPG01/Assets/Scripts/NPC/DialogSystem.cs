@@ -3,27 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+[System.Serializable]
+public class Dialogue {
+    public int id;
+    public bool isRead = false;
+    public bool isQuest = false;
+    public int afterDialogueWithId = 0;
+
+    [TextArea(3, 10)]
+    public string question;
+    [TextArea(3, 10)]
+    public string answer;
+}
+
 public class DialogSystem : MonoBehaviour {
     [SerializeField]
-    List<string> subjects = new List<string> {
-        "Who are you?",
-        "How are you?"
-    };
-
-    [SerializeField]
-    List<GameObject> choices;
-
-
-    private void Start() {
-        PopulateChoices(); 
-    }
-
-    private void PopulateChoices() {
-        for(int i = 0; i < subjects.Count; ++i) {
-            choices[i].SetActive(true);
-            choices[i].GetComponentInChildren<Text>().text = subjects[i];
+    List<Dialogue> dialogues = new List<Dialogue>();
+    
+    void ShowQuestions() {
+        foreach(Dialogue dialogue in dialogues) {
+            //if(!dialogue.isRead && ()
         }
     }
+
+
+
+
+
+
+
+
+
+
 
 
     List<string> quest01 = new List<string>() {
@@ -44,11 +56,4 @@ public class DialogSystem : MonoBehaviour {
         "Hello, how are you?",
         "Crops are growing and family is healthy. Life's good."
     };
-    
-    void StartQuest() {
-    }
-
-    void ReceiveReward() {
-
-    }
 }

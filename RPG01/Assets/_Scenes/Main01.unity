@@ -7346,6 +7346,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
         type: 3}
+      propertyPath: dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[0].dialoguesToUnlockById.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
       propertyPath: questionId.Array.data[1]
       value: 1
       objectReference: {fileID: 0}
@@ -7364,6 +7374,76 @@ PrefabInstance:
       propertyPath: choices.Array.data[1]
       value: 
       objectReference: {fileID: 1433669783}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[0].question
+      value: Hello!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[0].id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[0].answer
+      value: Hello stranger!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[1].id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[0].dialoguesToUnlockById.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[0].dialoguesToUnlockById.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[1].question
+      value: What's your name?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[1].answer
+      value: My name is Camil, the sheperd.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[2].id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[2].question
+      value: Do you know where can I find the Main Market?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[2].answer
+      value: Just head to the right and up the first elevator.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[1].dependsOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[1].afterDialogueWithId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431486145109652364, guid: 0949289cd3f5fae4a8fdddba98e771dd,
+        type: 3}
+      propertyPath: dialogues.Array.data[2].afterDialogueWithId
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0949289cd3f5fae4a8fdddba98e771dd, type: 3}
 --- !u!1001 &6702281144188369358
