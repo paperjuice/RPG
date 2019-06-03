@@ -119,3 +119,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fdc463d6ddaaf848aa5020976a407e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogues: []
+  dialogueButtonManager: {fileID: 0}
